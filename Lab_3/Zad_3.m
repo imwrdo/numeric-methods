@@ -14,27 +14,21 @@ function [A,b,M,bm,x,err_norm,time,iterations,index_number] = solve_Jacobi(N)
 % iterations - liczba iteracji wykonana w procesie iteracyjnym metody Jacobiego
 % index_number - Twój numer indeksu
 
-index_number = 201267; % Tutaj wprowadź swój numer indeksu
+index_number = 201267; 
 L1 = mod(index_number, 10);
-
 [A,b] = generate_matrix(N, L1);
 
-% Inicjalizacja x na wektor jedynkowy
 x = ones(N, 1);
-
-% Obliczenie macierzy M i wektora bm zgodnie z instrukcją
 D = diag(diag(A));
 L = tril(A, -1);
 U = triu(A, 1);
 M = -D \ (L + U);
 bm = D \ b;
 
-% Pomiar czasu
-tic;
 
-% Iteracyjne obliczanie przybliżonego rozwiązania x
-max_iterations = 1000; % Maksymalna liczba iteracji
-tolerance = 1e-12; % Tolerancja dla normy błędu rezydualnego
+tic;
+max_iterations = 1000;
+tolerance = 1e-12; 
 for iterations = 1:max_iterations
     x_old = x;
     x = M * x_old + bm;
