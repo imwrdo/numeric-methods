@@ -20,8 +20,8 @@ This repository contains completed labs for the Numerical Methods course at my u
   - Folder: Lab_3
   - Status: Completed and Published
   - Description: This lab explores the basic features of direct and iterative methods for solving systems of linear equations. Direct methods, such as Gaussian elimination, solve the system by performing a sequence of mathematical operations. Iterative methods, such as the Jacobi or Gauss-Seidel method, iteratively improve an initial guess to converge towards the solution.
-3. Direct and Iterative Methods for Solving Nonlinear Systems
-  - Folder: Lab_3
+4. Direct and Iterative Methods for Solving Nonlinear Systems
+  - Folder: Lab_4
   - Status: Completed and Published
   - Description: This lab explores the basic features of direct and iterative methods for solving systems of nonlinear equations:bisection and secant methods
 
