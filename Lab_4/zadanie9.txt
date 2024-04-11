@@ -1,0 +1,25 @@
+W 9 zadaniu zastosowałem wbudowaną funkcję Matlaba fzero do wyznaczenia miejsc zerowych funkcji tan(x)
+Analizę należy przprowadziłem dla dwóch punktów startowych: 6,0 oraz 4,5.
+
+Przy użyciu fzero z punktem startowym 6 otrzymałem takie wyniki:
+
+Wartosc x01: 6.283185 (Wartość, przy której funkcja Tan z punktem startowym 6 jest równa 0)
+Wartosc funkcji: -0.000000 (Potwierdza, że my szukaliszy właśnie miejsce, gdzie wartość funkcji Tan jest równa 0)
+Wartosc flagi wyjsciowej: 1.000000 (Oznacza, że funkcja fzero wykonała się bez żadnych problemów)
+Dodatkowa informacja: 
+Zero found in the interval [5.66059, 6.33941] (Wypisano na którym przdziale znajduje się wartość x)
+
+Przy użyciu fzero z punktem startowym 4.5 otrzymałem takie wyniki:
+
+Wartosc x02: 4.712389 (Wartość, przy której funkcja Tan z punktem startowym 4.5 jest równa 0)
+Wartosc funkcji: 510190062007397.125000 (Widać że wartość jest nie poprawna, bo musi być równa 0)
+Wartosc flagi wyjsciowej: -5.000000 (Oznacza, że algorytm mógł zbiegać się do pojedynczego punktu, czyli nie otrzymaliśmy potrzebnej nam wartośći)
+Dodatkowa informacja: 
+Current point x may be near a singular point. The interval [4.24544, 4.75456] 
+reduced to the requested tolerance and the function changes sign in the interval,
+but f(x) increased in magnitude as the interval reduced.
+
+Właśnie w dodatkowej informacji jest tłumaczone czemu nie otrzymaliśmy żądanej wartości, ponieważ bieżący punkt x może się znajdować poblizu
+punkktu osobliwego.
+Otrzymaliśmy przedział [4,24544, 4,75456] i wartość x została zredukowana do żądanej tolerancji i znaku zmiany funkcji w przedziale,
+ponieważ x dotarła do asymptoty i funkcja nie może mieć tam jakiejkolwiek wartośći.
