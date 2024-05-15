@@ -78,15 +78,14 @@ while max(abs(F_fine),[],'all') <= 100
 end
 
 % Wykresy
-figure;
+
 subplot(2,1,1);
 surf(X_coarse, Y_coarse, F_coarse);
 title('Funkcja oryginalna');
 xlabel('x');
 ylabel('y');
 zlabel('F(x, y)');
-colorbar;
-axis tight;
+
 
 subplot(2,1,2);
 surf(X_fine, Y_fine, F_fine);
@@ -94,8 +93,6 @@ title('Interpolacja');
 xlabel('x');
 ylabel('y');
 zlabel('F(x, y)');
-colorbar;
-axis tight;
 
 % Zapisz wykresy do pliku
 saveas(gcf, 'zadanie5.png');
