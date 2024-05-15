@@ -50,15 +50,12 @@ function [M,N,P,R,x_coarse,y_coarse,F_coarse,x_fine,y_fine,F_fine] = zadanie4()
     end
 
     % Wykresy
-    figure;
     subplot(2,1,1);
     surf(X_coarse, Y_coarse, F_coarse);
     title('Funkcja oryginalna');
     xlabel('x');
     ylabel('y');
     zlabel('F(x, y)');
-    colorbar;
-    axis tight;
 
     subplot(2,1,2);
     surf(X_fine, Y_fine, F_fine);
@@ -66,10 +63,9 @@ function [M,N,P,R,x_coarse,y_coarse,F_coarse,x_fine,y_fine,F_fine] = zadanie4()
     xlabel('x');
     ylabel('y');
     zlabel('F(x, y)');
-    colorbar;
-    axis tight;
 
     % Zapisz wykresy do pliku
     saveas(gcf, 'zadanie4.png');
 
 end
+
