@@ -83,5 +83,5 @@ end
 function V = vandermonde_matrix(N)
     % Generuje macierz Vandermonde dla N punktów równomiernie rozmieszczonych w przedziale [0, 1]
     x = linspace(0, 1, N);
-    V = repmat(x', 1, N).^repmat(0:N-1, N, 1);
+    V = fliplr(vander(x));
 end
